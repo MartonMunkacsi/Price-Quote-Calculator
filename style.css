@@ -1,6 +1,52 @@
+
 html {
     background-color: rgb(86, 213, 252);
     height: 100%
+}
+
+/*New additions to html - creating a navbar with an add to cart feature*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgba(17, 17, 17, 0.068);
+}
+
+.active {
+    background-color: #ffffff;
+}
+
+/* All "cart" related additions come with the first commit */
+#cart {
+    float: right;
+    opacity: 1.0;
+    background: url('Pictures/shopping_cart_final.png');
+    width: 28px;
+}
+
+#cart:hover {
+    opacity: 0.4;
+}
+
+#cart_count {
+   float: right;
 }
 
 #container {
@@ -34,6 +80,11 @@ html {
 p {
     color: white;
     text-align: left;
+}
+h3 {
+    color: rgb(0, 0, 0);
+    margin-top: -180px;
+    text-align: center;
 }
 
 .input-styling {
