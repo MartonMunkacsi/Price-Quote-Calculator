@@ -14,11 +14,18 @@ btn.addEventListener('click', function() {
     document.getElementById('finalSum').innerHTML = "Your final bill will be £"+totalBill
   
 })
-//new additions. Following lines will add the new price quote to cart with measurements etc in detailed receipt. (1st Commit)
-let cartCount = document.getElementById("cart_count");
 
+// the following function uses an increment loop, when 'add to cart' btn is pressed, the number in cart goes up.
+var number = 0;
 
 addcart.addEventListener('click', function(){
-    //need to make 'addcart' button increment value of cart counter using i++
+    var count = document.getElementById('cart_count');
+
+    number++;
+    count.innerHTML = number;
 })
+
+//Problem: increment happens even when nothing is put into calculator. Need to fix so it shows (in red) fill in form before it can add to cart.
+
+//What's needed still? - A side bar showing detailed basket when basket is pressed.
 
